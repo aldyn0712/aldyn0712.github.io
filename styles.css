@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#bungkus {
+    font-family: Montserrat, sans-serif;
+    line-height: 20px;
+    margin: auto;
+    width: 70%;
+    box-shadow: 6px 6px 5px 10px #666666;
+}
+
+header {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgb(187, 187, 245);
+    padding: 50px;
+    text-align: center;
+    background: #57b643;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    border: 1px dotted;
+    background-color: #26271b;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:active {
+    color: orange;
+}
+
+p {
+    text-indent: 50px;
+}
+
+p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(66, 31, 5);
+}
+
+.dropdown {
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #888888;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#content {
+    text-align: justify;
+    flex: 7;
+    order: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+aside {
+    flex: 3;
+    order: 2;
+    background-color: white;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px 5px 10px 5px;
+}
+
+article {
+    width: 100%;
+    border: 4px solid black;
+    padding: 10px;
+    border: 4px solid black;
+    overflow: auto;
+}
+
+img {
+    float: left;
+    margin: 10px;
+    background-color: rgb(109, 139, 248);
+    width: 60%;
+    height: 60%;
+    padding: 2px;
+
+}
+
+.imagep {
+    width: 290px;
+    height: 320px;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    #bungkus {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
