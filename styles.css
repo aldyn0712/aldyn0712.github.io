@@ -9,21 +9,30 @@
     margin: auto;
     width: 70%;
     box-shadow: 6px 6px 5px 10px #666666;
+    background-color: #0f1111;
+
 }
 
 header {
     font-weight: bold;
-    text-shadow: 4px 4px 3px rgb(187, 187, 245);
-    padding: 50px;
+    text-shadow: 4px 4px 3px #45e6d8;
+    padding: 40px;
     text-align: center;
-    background: #57b643;
-    color: white;
+    background: #12200f;
+    color: rgb(245, 245, 245);
+    --var-color: rgb(23, 235, 250 ,850);
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px var(--var-color);
+    font-size: 30px;
+    
+  
 }
 
 nav {
     text-align: center;
     border: 1px dotted;
-    background-color: #26271b;
+    background-color: #0dec50;
     position: sticky;
     top: 0;
 }
@@ -136,7 +145,7 @@ img {
 footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
+    background-color: #0dec50;
     text-align: center;
     font-weight: bold;
 }
